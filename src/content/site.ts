@@ -107,3 +107,14 @@ export const reasons = [
     text: "Early mornings, evenings until 8:30 pm and Sunday appointments.",
   },
 ];
+
+export const faqHeading = { eyebrow: "FAQ", title: "Questions before your visit" };
+
+export const faqs = [
+  { question: "Does treatment hurt?", answer: "We use numbing and pain-managed techniques, explain each step and pause whenever you need a break." },
+  { question: "How much will it cost?", answer: "Starting prices are listed on this site. You will receive a written estimate after consultation, before treatment begins." },
+  { question: "Do you offer EMI?", answer: "No-cost EMI options are available for eligible treatments. Ask about eligibility and terms during your consultation." },
+  { question: "Do you treat children?", answer: "Yes. We offer gentle first visits, check-ups and preventive care for children of all ages." },
+  { question: "What if I have a dental emergency?", answer: "Call during opening hours to ask about an urgent appointment. For a serious injury or difficulty breathing, seek emergency care immediately." },
+  { question: "Do you accept insurance?", answer: "Coverage depends on your policy. Check with your provider before treatment; we can help with treatment estimates and invoices." },
+];

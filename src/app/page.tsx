@@ -1,13 +1,15 @@
-import { site, services } from "@/content/site";
+import { site, services, faqs } from "@/content/site";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
+import { Faq } from "@/components/sections/Faq";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { ConceptBar, Footer, WhatsAppFab } from "@/components/sections/Footer";
 import { BookingPlaceholder } from "@/components/sections/BookingPlaceholder";
 
 const jsonLd = {
   "@context": "https://schema.org",
+  "@graph": [{
   "@type": "Dentist",
   name: site.name,
   description: site.description,
@@ -19,6 +21,13 @@ const jsonLd = {
     "@type": "Offer",
     itemOffered: { "@type": "Service", name: s.title },
   })),
+  }, {
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ question, answer }) => ({
+      "@type": "Question", name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  }],
 };
 
 export default function Home() {
@@ -26,7 +35,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
       <a
         href="#main"
@@ -40,7 +49,8 @@ export default function Home() {
         <Hero />
         <Services />
         <WhyUs />
-        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Pricing, Faq, Booking, Location */}
+        <Faq />
+        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Pricing, Booking, Location */}
         <BookingPlaceholder />
       </main>
       <Footer />
