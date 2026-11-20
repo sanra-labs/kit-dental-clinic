@@ -6,7 +6,7 @@ import { Faq } from "@/components/sections/Faq";
 import { Pricing } from "@/components/sections/Pricing";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { ConceptBar, Footer, WhatsAppFab } from "@/components/sections/Footer";
-import { BookingPlaceholder } from "@/components/sections/BookingPlaceholder";
+import { Booking } from "@/components/sections/Booking";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -52,8 +52,8 @@ export default function Home() {
         <Pricing />
         <WhyUs />
         <Faq />
-        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Booking, Location */}
-        <BookingPlaceholder />
+        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Location */}
+        <Booking />
       </main>
       <Footer />
       <WhatsAppFab />

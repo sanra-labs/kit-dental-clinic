@@ -144,3 +144,25 @@ export const pricing = [
     { name: "Dental veneers", from: "₹8,000" },
   ] },
 ];
+
+export const bookingCopy = {
+  eyebrow: "Booking",
+  title: "Book your first visit",
+  call: "Call",
+  whatsapp: "WhatsApp us",
+  demo: "Concept demo only. No appointment is sent or booked; please use sample details.",
+  labels: { name: "Full name", phone: "Phone", service: "Service", date: "Preferred date", slot: "Time slot", notes: "Notes (optional)" },
+  phoneHint: "Enter a 10-digit Indian mobile number, without +91.",
+  chooseService: "Choose a service",
+  slots: ["Morning", "Afternoon", "Evening"],
+  submit: "Request an appointment",
+  submitting: "Sending request…",
+  success: "Request received – we'll call you to confirm",
+  errors: {
+    name: "Enter your full name.",
+    phone: "Enter 10 digits starting with 6, 7, 8 or 9.",
+    service: "Choose a service from the list.",
+    date: "Choose a valid date today or later.",
+    slot: "Choose a time slot.",
+  },
+};
