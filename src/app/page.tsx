@@ -3,6 +3,7 @@ import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { Faq } from "@/components/sections/Faq";
+import { Pricing } from "@/components/sections/Pricing";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { ConceptBar, Footer, WhatsAppFab } from "@/components/sections/Footer";
 import { BookingPlaceholder } from "@/components/sections/BookingPlaceholder";
@@ -48,9 +49,10 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Services />
+        <Pricing />
         <WhyUs />
         <Faq />
-        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Pricing, Booking, Location */}
+        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Booking, Location */}
         <BookingPlaceholder />
       </main>
       <Footer />

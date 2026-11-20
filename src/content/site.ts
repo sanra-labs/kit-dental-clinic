@@ -118,3 +118,29 @@ export const faqs = [
   { question: "What if I have a dental emergency?", answer: "Call during opening hours to ask about an urgent appointment. For a serious injury or difficulty breathing, seek emergency care immediately." },
   { question: "Do you accept insurance?", answer: "Coverage depends on your policy. Check with your provider before treatment; we can help with treatment estimates and invoices." },
 ];
+
+export const pricingCopy = {
+  eyebrow: "Pricing",
+  title: "Clear prices, thoughtful care",
+  book: "Book",
+  from: "From",
+  footnote: "Final price confirmed in a written estimate after consultation.",
+};
+
+export const pricing = [
+  { title: "Preventive", items: [
+    { name: services[0].title, from: services[0].from },
+    { name: services[5].title, from: services[5].from },
+    { name: "Fluoride care", from: "₹600" },
+  ] },
+  { title: "Restorative", items: [
+    { name: "Tooth-coloured filling", from: "₹1,200" },
+    { name: services[1].title, from: services[1].from },
+    { name: services[3].title, from: services[3].from },
+  ] },
+  { title: "Cosmetic & orthodontic", items: [
+    { name: services[4].title, from: services[4].from },
+    { name: services[2].title, from: services[2].from },
+    { name: "Dental veneers", from: "₹8,000" },
+  ] },
+];
