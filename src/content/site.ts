@@ -25,9 +25,9 @@ export const site = {
   },
   nav: [
     { label: "Services", href: "#services" },
+    { label: "Pricing", href: "#pricing" },
     { label: "Why us", href: "#why-us" },
     { label: "Doctors", href: "#doctors" },
-    { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
   trust: ["Open 7 days", "Digital X-ray", "No-cost EMI", "Evening slots"],
@@ -37,13 +37,7 @@ export const site = {
   },
 } as const;
 
-export type ServiceIcon =
-  | "checkup"
-  | "rootCanal"
-  | "aligners"
-  | "implant"
-  | "whitening"
-  | "kids";
+export type ServiceIcon = "checkup" | "rootCanal" | "aligners" | "implant" | "whitening" | "kids";
 
 export const services: {
   title: string;
@@ -105,5 +99,143 @@ export const reasons = [
   {
     title: "Slots that fit your day",
     text: "Early mornings, evenings until 8:30 pm and Sunday appointments.",
+  },
+];
+
+export const faqHeading = { eyebrow: "FAQ", title: "Questions before your visit" };
+
+export const faqs = [
+  {
+    question: "Does treatment hurt?",
+    answer:
+      "We use numbing and pain-managed techniques, explain each step and pause whenever you need a break.",
+  },
+  {
+    question: "How much will it cost?",
+    answer:
+      "Starting prices are listed on this site. You will receive a written estimate after consultation, before treatment begins.",
+  },
+  {
+    question: "Do you offer EMI?",
+    answer:
+      "No-cost EMI options are available for eligible treatments. Ask about eligibility and terms during your consultation.",
+  },
+  {
+    question: "Do you treat children?",
+    answer:
+      "Yes. We offer gentle first visits, check-ups and preventive care for children of all ages.",
+  },
+  {
+    question: "What if I have a dental emergency?",
+    answer:
+      "Call during opening hours to ask about an urgent appointment. For a serious injury or difficulty breathing, seek emergency care immediately.",
+  },
+  {
+    question: "Do you accept insurance?",
+    answer:
+      "Coverage depends on your policy. Check with your provider before treatment; we can help with treatment estimates and invoices.",
+  },
+];
+
+export const pricingCopy = {
+  eyebrow: "Pricing",
+  title: "Clear prices, thoughtful care",
+  book: "Book",
+  from: "From",
+  footnote: "Final price confirmed in a written estimate after consultation.",
+};
+
+export const pricing = [
+  {
+    title: "Preventive",
+    items: [
+      { name: services[0].title, from: services[0].from },
+      { name: services[5].title, from: services[5].from },
+      { name: "Fluoride care", from: "₹600" },
+    ],
+  },
+  {
+    title: "Restorative",
+    items: [
+      { name: "Tooth-coloured filling", from: "₹1,200" },
+      { name: services[1].title, from: services[1].from },
+      { name: services[3].title, from: services[3].from },
+    ],
+  },
+  {
+    title: "Cosmetic & orthodontic",
+    items: [
+      { name: services[4].title, from: services[4].from },
+      { name: services[2].title, from: services[2].from },
+      { name: "Dental veneers", from: "₹8,000" },
+    ],
+  },
+];
+
+export const bookingCopy = {
+  eyebrow: "Booking",
+  title: "Book your first visit",
+  call: "Call",
+  whatsapp: "WhatsApp us",
+  demo: "Concept demo only. No appointment is sent or booked; please use sample details.",
+  labels: {
+    name: "Full name",
+    phone: "Phone",
+    service: "Service",
+    date: "Preferred date",
+    slot: "Time slot",
+    notes: "Notes (optional)",
+  },
+  phoneHint: "Enter a 10-digit Indian mobile number, without +91.",
+  chooseService: "Choose a service",
+  slots: ["Morning", "Afternoon", "Evening"],
+  submit: "Request an appointment",
+  submitting: "Sending request…",
+  success: "Request received – we'll call you to confirm",
+  errors: {
+    name: "Enter your full name.",
+    phone: "Enter 10 digits starting with 6, 7, 8 or 9.",
+    service: "Choose a service from the list.",
+    date: "Choose a valid date today or later.",
+    slot: "Choose a time slot.",
+  },
+};
+
+export const doctorsCopy = {
+  eyebrow: "Our doctors",
+  title: "Meet the people behind your care",
+  disclaimer: "Doctors shown are fictional (concept project).",
+};
+
+type Doctor = {
+  name: string;
+  initials: string;
+  qualifications: string;
+  specialty: string;
+  experience: string;
+  bio: string;
+  tags: string[];
+  // Use a local, AI-generated WebP/AVIF portrait when available.
+  image?: { src: string; alt: string; width: number; height: number };
+};
+
+export const doctors: Doctor[] = [
+  {
+    name: "Dr. Meera Rao",
+    initials: "MR",
+    qualifications: "BDS, MDS",
+    specialty: "Orthodontics",
+    experience: "9 years",
+    bio: "Meera helps patients explore braces and clear aligners with simple explanations and a treatment plan built around their daily routine.",
+    tags: ["Clear aligners", "Braces", "Smile planning"],
+  },
+  {
+    name: "Dr. Arjun Menon",
+    initials: "AM",
+    qualifications: "BDS",
+    specialty: "Implants & general dentistry",
+    experience: "7 years",
+    bio: "Arjun focuses on everyday dental care and restoring missing teeth, taking time to explain each step and help patients feel at ease.",
+    tags: ["Dental implants", "Preventive care", "Gentle dentistry"],
   },
 ];

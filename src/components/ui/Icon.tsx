@@ -1,6 +1,7 @@
 import type { ServiceIcon } from "@/content/site";
 
-type IconName = ServiceIcon | "check" | "whatsapp" | "phone" | "menu" | "close" | "arrow";
+type IconName =
+  ServiceIcon | "check" | "whatsapp" | "phone" | "menu" | "close" | "arrow" | "chevron";
 
 const paths: Record<IconName, React.ReactNode> = {
   checkup: (
@@ -53,6 +54,7 @@ const paths: Record<IconName, React.ReactNode> = {
   ),
   menu: <path d="M4 7h16M4 12h16M4 17h16" />,
   close: <path d="M6 6l12 12M18 6 6 18" />,
+  chevron: <path d="m6 9 6 6 6-6" />,
   arrow: <path d="M5 12h14m-5-5 5 5-5 5" />,
 };
 
