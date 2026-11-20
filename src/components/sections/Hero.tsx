@@ -74,7 +74,7 @@ export function Hero() {
               Confirm 5:30 pm
             </a>
           </div>
-          <div className="absolute -bottom-6 -left-4 hidden items-center gap-3 sm:flex rounded-2xl bg-white px-4 py-3 shadow-lg ring-1 ring-line sm:-left-10">
+          <div className="animate-float absolute -bottom-6 -left-4 hidden items-center gap-3 sm:flex rounded-2xl bg-white px-4 py-3 shadow-lg ring-1 ring-line sm:-left-10">
             <span className="grid size-10 place-items-center rounded-full bg-accent/20 text-accent-dark">
               <Icon name="check" className="size-5" />
             </span>

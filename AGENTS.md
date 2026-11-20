@@ -33,7 +33,7 @@ Concept dental clinic website by Sanra Labs, built as a portfolio piece. Every n
 ## Before opening a PR
 - `npm run build` and `npm run lint` pass with no warnings
 - Work on a branch named `feat/<section>`, never push to `main`
-- PR description: what changed, screenshots at 390 px and 1280 px
+- PR description: what changed and how it behaves at 390 px and 1280 px widths
 
 ## Section status
 | Section | id | Status |

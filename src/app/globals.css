@@ -17,6 +17,17 @@
   --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 
   --radius-card: 1.25rem;
+
+  --animate-float: float 5s ease-in-out infinite;
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 }
 
 html {
@@ -27,6 +38,9 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .animate-float {
+    animation: none;
   }
 }
 

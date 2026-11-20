@@ -33,7 +33,7 @@ export const site = {
   trust: ["Open 7 days", "Digital X-ray", "No-cost EMI", "Evening slots"],
   credit: {
     text: "Concept project by Sanra Labs",
-    href: "https://sanralabs.com", // TODO: confirm Sanra Labs URL
+    href: "https://sanralabs.com",
   },
 } as const;
 
