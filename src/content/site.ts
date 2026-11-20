@@ -166,3 +166,42 @@ export const bookingCopy = {
     slot: "Choose a time slot.",
   },
 };
+
+export const doctorsCopy = {
+  eyebrow: "Our doctors",
+  title: "Meet the people behind your care",
+  disclaimer: "Doctors shown are fictional (concept project).",
+};
+
+type Doctor = {
+  name: string;
+  initials: string;
+  qualifications: string;
+  specialty: string;
+  experience: string;
+  bio: string;
+  tags: string[];
+  // Use a local, AI-generated WebP/AVIF portrait when available.
+  image?: { src: string; alt: string; width: number; height: number };
+};
+
+export const doctors: Doctor[] = [
+  {
+    name: "Dr. Meera Rao",
+    initials: "MR",
+    qualifications: "BDS, MDS",
+    specialty: "Orthodontics",
+    experience: "9 years",
+    bio: "Meera helps patients explore braces and clear aligners with simple explanations and a treatment plan built around their daily routine.",
+    tags: ["Clear aligners", "Braces", "Smile planning"],
+  },
+  {
+    name: "Dr. Arjun Menon",
+    initials: "AM",
+    qualifications: "BDS",
+    specialty: "Implants & general dentistry",
+    experience: "7 years",
+    bio: "Arjun focuses on everyday dental care and restoring missing teeth, taking time to explain each step and help patients feel at ease.",
+    tags: ["Dental implants", "Preventive care", "Gentle dentistry"],
+  },
+];

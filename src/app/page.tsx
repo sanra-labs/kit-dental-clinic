@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { Faq } from "@/components/sections/Faq";
 import { Pricing } from "@/components/sections/Pricing";
+import { Doctors } from "@/components/sections/Doctors";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { ConceptBar, Footer, WhatsAppFab } from "@/components/sections/Footer";
 import { Booking } from "@/components/sections/Booking";
@@ -51,8 +52,9 @@ export default function Home() {
         <Services />
         <Pricing />
         <WhyUs />
+        <Doctors />
         <Faq />
-        {/* Upcoming sections (see AGENTS.md task list): Doctors, ClinicTour, Location */}
+        {/* Upcoming sections (see AGENTS.md task list): ClinicTour, Location */}
         <Booking />
       </main>
       <Footer />
