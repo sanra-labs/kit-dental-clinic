@@ -25,9 +25,9 @@ export const site = {
   },
   nav: [
     { label: "Services", href: "#services" },
+    { label: "Pricing", href: "#pricing" },
     { label: "Why us", href: "#why-us" },
     { label: "Doctors", href: "#doctors" },
-    { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
   ],
   trust: ["Open 7 days", "Digital X-ray", "No-cost EMI", "Evening slots"],
@@ -37,13 +37,7 @@ export const site = {
   },
 } as const;
 
-export type ServiceIcon =
-  | "checkup"
-  | "rootCanal"
-  | "aligners"
-  | "implant"
-  | "whitening"
-  | "kids";
+export type ServiceIcon = "checkup" | "rootCanal" | "aligners" | "implant" | "whitening" | "kids";
 
 export const services: {
   title: string;
@@ -111,12 +105,36 @@ export const reasons = [
 export const faqHeading = { eyebrow: "FAQ", title: "Questions before your visit" };
 
 export const faqs = [
-  { question: "Does treatment hurt?", answer: "We use numbing and pain-managed techniques, explain each step and pause whenever you need a break." },
-  { question: "How much will it cost?", answer: "Starting prices are listed on this site. You will receive a written estimate after consultation, before treatment begins." },
-  { question: "Do you offer EMI?", answer: "No-cost EMI options are available for eligible treatments. Ask about eligibility and terms during your consultation." },
-  { question: "Do you treat children?", answer: "Yes. We offer gentle first visits, check-ups and preventive care for children of all ages." },
-  { question: "What if I have a dental emergency?", answer: "Call during opening hours to ask about an urgent appointment. For a serious injury or difficulty breathing, seek emergency care immediately." },
-  { question: "Do you accept insurance?", answer: "Coverage depends on your policy. Check with your provider before treatment; we can help with treatment estimates and invoices." },
+  {
+    question: "Does treatment hurt?",
+    answer:
+      "We use numbing and pain-managed techniques, explain each step and pause whenever you need a break.",
+  },
+  {
+    question: "How much will it cost?",
+    answer:
+      "Starting prices are listed on this site. You will receive a written estimate after consultation, before treatment begins.",
+  },
+  {
+    question: "Do you offer EMI?",
+    answer:
+      "No-cost EMI options are available for eligible treatments. Ask about eligibility and terms during your consultation.",
+  },
+  {
+    question: "Do you treat children?",
+    answer:
+      "Yes. We offer gentle first visits, check-ups and preventive care for children of all ages.",
+  },
+  {
+    question: "What if I have a dental emergency?",
+    answer:
+      "Call during opening hours to ask about an urgent appointment. For a serious injury or difficulty breathing, seek emergency care immediately.",
+  },
+  {
+    question: "Do you accept insurance?",
+    answer:
+      "Coverage depends on your policy. Check with your provider before treatment; we can help with treatment estimates and invoices.",
+  },
 ];
 
 export const pricingCopy = {
@@ -128,21 +146,30 @@ export const pricingCopy = {
 };
 
 export const pricing = [
-  { title: "Preventive", items: [
-    { name: services[0].title, from: services[0].from },
-    { name: services[5].title, from: services[5].from },
-    { name: "Fluoride care", from: "₹600" },
-  ] },
-  { title: "Restorative", items: [
-    { name: "Tooth-coloured filling", from: "₹1,200" },
-    { name: services[1].title, from: services[1].from },
-    { name: services[3].title, from: services[3].from },
-  ] },
-  { title: "Cosmetic & orthodontic", items: [
-    { name: services[4].title, from: services[4].from },
-    { name: services[2].title, from: services[2].from },
-    { name: "Dental veneers", from: "₹8,000" },
-  ] },
+  {
+    title: "Preventive",
+    items: [
+      { name: services[0].title, from: services[0].from },
+      { name: services[5].title, from: services[5].from },
+      { name: "Fluoride care", from: "₹600" },
+    ],
+  },
+  {
+    title: "Restorative",
+    items: [
+      { name: "Tooth-coloured filling", from: "₹1,200" },
+      { name: services[1].title, from: services[1].from },
+      { name: services[3].title, from: services[3].from },
+    ],
+  },
+  {
+    title: "Cosmetic & orthodontic",
+    items: [
+      { name: services[4].title, from: services[4].from },
+      { name: services[2].title, from: services[2].from },
+      { name: "Dental veneers", from: "₹8,000" },
+    ],
+  },
 ];
 
 export const bookingCopy = {
@@ -151,7 +178,14 @@ export const bookingCopy = {
   call: "Call",
   whatsapp: "WhatsApp us",
   demo: "Concept demo only. No appointment is sent or booked; please use sample details.",
-  labels: { name: "Full name", phone: "Phone", service: "Service", date: "Preferred date", slot: "Time slot", notes: "Notes (optional)" },
+  labels: {
+    name: "Full name",
+    phone: "Phone",
+    service: "Service",
+    date: "Preferred date",
+    slot: "Time slot",
+    notes: "Notes (optional)",
+  },
   phoneHint: "Enter a 10-digit Indian mobile number, without +91.",
   chooseService: "Choose a service",
   slots: ["Morning", "Afternoon", "Evening"],

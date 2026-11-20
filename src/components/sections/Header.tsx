@@ -57,7 +57,11 @@ export function Header() {
       </div>
 
       {open && (
-        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-line bg-white md:hidden">
+        <nav
+          id="mobile-nav"
+          aria-label="Mobile"
+          className="border-t border-line bg-white md:hidden"
+        >
           <ul className="mx-auto max-w-6xl px-4 py-2">
             {site.nav.map((item) => (
               <li key={item.href}>

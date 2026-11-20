@@ -1,6 +1,7 @@
 import type { ServiceIcon } from "@/content/site";
 
-type IconName = ServiceIcon | "check" | "whatsapp" | "phone" | "menu" | "close" | "arrow" | "chevron";
+type IconName =
+  ServiceIcon | "check" | "whatsapp" | "phone" | "menu" | "close" | "arrow" | "chevron";
 
 const paths: Record<IconName, React.ReactNode> = {
   checkup: (

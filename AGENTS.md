@@ -24,6 +24,7 @@ Concept dental clinic website by Sanra Labs, built as a portfolio piece. Every n
 - Reuse `Button` and `SectionHeading` from `src/components/ui/Button.tsx`
 - Layout: `mx-auto max-w-6xl px-4 sm:px-6`, section padding `py-20 md:py-28`
 - Mobile-first; check 360, 768 and 1280 px widths
+- Format with `npx prettier@3 --print-width 100 --write "src/**/*.{ts,tsx}"` before committing; avoid long single-line JSX
 - Server components by default; add `"use client"` only for interactivity, and keep client components small
 - Accessibility: one `h1` (in Hero), sections use `aria-labelledby`, buttons/links have visible text or `aria-label`, touch targets ≥ 44 px, visible focus, respect `prefers-reduced-motion`
 - No `new Date()` / `Math.random()` in server components (Cache Components is on)
@@ -39,9 +40,9 @@ Concept dental clinic website by Sanra Labs, built as a portfolio piece. Every n
 | Section | id | Status |
 |---|---|---|
 | Header, Hero, Services, WhyUs, Footer, WhatsApp FAB | – | done |
-| Doctors (2 fictional doctors, AI portraits) | `#doctors` | todo |
+| Doctors (initials now, AI portraits later) | `#doctors` | done |
 | ClinicTour (4-image gallery + accessible lightbox) | `#tour` | todo |
-| Pricing (table, "final price after consultation") | `#pricing` | todo |
-| Faq (6 questions, accessible accordion using `<details>`) | `#faq` | todo |
-| Booking (form + validation + success state, replaces BookingPlaceholder) | `#booking` | todo |
+| Pricing | `#pricing` | done |
+| Faq | `#faq` | done |
+| Booking (demo form, no backend) | `#booking` | done |
 | Location (static map image + hours) | `#location` | todo |

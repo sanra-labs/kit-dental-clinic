@@ -11,25 +11,29 @@ import { Booking } from "@/components/sections/Booking";
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [{
-  "@type": "Dentist",
-  name: site.name,
-  description: site.description,
-  telephone: site.contact.phone,
-  email: site.contact.email,
-  address: { "@type": "PostalAddress", streetAddress: site.contact.address },
-  openingHours: ["Mo-Sa 09:00-20:30", "Su 10:00-14:00"],
-  makesOffer: services.map((s) => ({
-    "@type": "Offer",
-    itemOffered: { "@type": "Service", name: s.title },
-  })),
-  }, {
-    "@type": "FAQPage",
-    mainEntity: faqs.map(({ question, answer }) => ({
-      "@type": "Question", name: question,
-      acceptedAnswer: { "@type": "Answer", text: answer },
-    })),
-  }],
+  "@graph": [
+    {
+      "@type": "Dentist",
+      name: site.name,
+      description: site.description,
+      telephone: site.contact.phone,
+      email: site.contact.email,
+      address: { "@type": "PostalAddress", streetAddress: site.contact.address },
+      openingHours: ["Mo-Sa 09:00-20:30", "Su 10:00-14:00"],
+      makesOffer: services.map((s) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: s.title },
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map(({ question, answer }) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer },
+      })),
+    },
+  ],
 };
 
 export default function Home() {
@@ -54,7 +58,7 @@ export default function Home() {
         <WhyUs />
         <Doctors />
         <Faq />
-        {/* Upcoming sections (see AGENTS.md task list): ClinicTour, Location */}
+        {/* Upcoming sections (see docs/tasks): ClinicTour, Location */}
         <Booking />
       </main>
       <Footer />

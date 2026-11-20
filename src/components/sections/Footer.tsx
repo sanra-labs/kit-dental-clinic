@@ -35,7 +35,10 @@ export function Footer() {
           <p className="font-semibold">Contact</p>
           <ul className="mt-2 space-y-2 text-muted">
             <li>
-              <a href={site.contact.phoneHref} className="inline-flex items-center gap-2 hover:text-brand">
+              <a
+                href={site.contact.phoneHref}
+                className="inline-flex items-center gap-2 hover:text-brand"
+              >
                 <Icon name="phone" className="size-4" /> {site.contact.phone}
               </a>
             </li>
