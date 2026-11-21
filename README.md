@@ -2,7 +2,9 @@
 
 A fast, mobile-first website for a fictional dental clinic, built by **Sanra Labs** as part of a website + ad video kit.
 
-> Concept project: The Smile Studio, its staff, phone numbers and address are fictional.
+> Concept project: The Smile Studio, its staff, phone numbers and address are fictional. Photos are AI-generated.
+
+**Live site:** https://kit-dental-clinic.vercel.app · **Ad video (30s):** https://youtu.be/_npCMlX0Eso
 
 ## Highlights
 - Next.js 16 App Router + React 19 + TypeScript + Tailwind CSS v4
