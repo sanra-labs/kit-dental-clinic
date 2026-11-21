@@ -28,6 +28,7 @@ export const site = {
     { label: "Pricing", href: "#pricing" },
     { label: "Why us", href: "#why-us" },
     { label: "Doctors", href: "#doctors" },
+    { label: "Clinic", href: "#tour" },
     { label: "FAQ", href: "#faq" },
   ],
   trust: ["Open 7 days", "Digital X-ray", "No-cost EMI", "Evening slots"],
@@ -204,7 +205,7 @@ export const bookingCopy = {
 export const doctorsCopy = {
   eyebrow: "Our doctors",
   title: "Meet the people behind your care",
-  disclaimer: "Doctors shown are fictional (concept project).",
+  disclaimer: "Doctors shown are fictional (concept project). Photos are AI-generated.",
 };
 
 type Doctor = {
@@ -228,6 +229,12 @@ export const doctors: Doctor[] = [
     experience: "9 years",
     bio: "Meera helps patients explore braces and clear aligners with simple explanations and a treatment plan built around their daily routine.",
     tags: ["Clear aligners", "Braces", "Smile planning"],
+    image: {
+      src: "/images/doctor-meera.webp",
+      alt: "Dentist in mask and loupes examining a patient",
+      width: 900,
+      height: 900,
+    },
   },
   {
     name: "Dr. Arjun Menon",
@@ -237,5 +244,40 @@ export const doctors: Doctor[] = [
     experience: "7 years",
     bio: "Arjun focuses on everyday dental care and restoring missing teeth, taking time to explain each step and help patients feel at ease.",
     tags: ["Dental implants", "Preventive care", "Gentle dentistry"],
+    image: {
+      src: "/images/doctor-arjun.webp",
+      alt: "Dentist's gloved hands holding a clear aligner",
+      width: 900,
+      height: 900,
+    },
   },
 ];
+
+export const tourCopy = {
+  eyebrow: "Clinic tour",
+  title: "A calm space, built around you",
+  text: "Take a look inside before your first visit.",
+};
+
+export const tour = [
+  {
+    src: "/images/tour-reception.webp",
+    alt: "Bright reception with armchairs, plants and a wooden front desk",
+    caption: "Reception & waiting lounge",
+  },
+  {
+    src: "/images/tour-treatment.webp",
+    alt: "Treatment room with a teal dental chair and a screen showing an X-ray",
+    caption: "Treatment room with digital X-ray",
+  },
+  {
+    src: "/images/tour-sterilisation.webp",
+    alt: "Autoclave and sealed instrument pouches on a clean counter",
+    caption: "Sterilisation area",
+  },
+  {
+    src: "/images/tour-kids.webp",
+    alt: "Kids corner with small chairs, books and a play mat",
+    caption: "Kids corner",
+  },
+] as const;

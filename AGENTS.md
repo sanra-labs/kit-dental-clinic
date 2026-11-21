@@ -41,8 +41,8 @@ Concept dental clinic website by Sanra Labs, built as a portfolio piece. Every n
 |---|---|---|
 | Header, Hero, Services, WhyUs, Footer, WhatsApp FAB | – | done |
 | Doctors (initials now, AI portraits later) | `#doctors` | done |
-| ClinicTour (4-image gallery + accessible lightbox) | `#tour` | todo |
+| ClinicTour (gallery + `<dialog>` lightbox) | `#tour` | done |
 | Pricing | `#pricing` | done |
 | Faq | `#faq` | done |
 | Booking (demo form, no backend) | `#booking` | done |
-| Location (static map image + hours) | `#location` | todo |
+| Location (illustrated SVG map + hours) | `#location` | done |

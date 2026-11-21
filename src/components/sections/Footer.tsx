@@ -4,7 +4,7 @@ import { Icon } from "@/components/ui/Icon";
 export function ConceptBar() {
   return (
     <div className="bg-ink px-4 py-2 text-center text-xs text-slate-300">
-      Concept project – {site.name} is a fictional clinic.{" "}
+      Concept project – {site.name} is a fictional clinic and photos are AI-generated.{" "}
       <a href={site.credit.href} className="font-semibold text-white underline underline-offset-2">
         Built by Sanra Labs
       </a>

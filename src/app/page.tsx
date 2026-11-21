@@ -9,6 +9,7 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { ConceptBar, Footer } from "@/components/sections/Footer";
 import { WhatsAppFab } from "@/components/sections/WhatsAppFab";
 import { Location } from "@/components/sections/Location";
+import { ClinicTour } from "@/components/sections/ClinicTour";
 import { Booking } from "@/components/sections/Booking";
 
 const jsonLd = {
@@ -59,6 +60,7 @@ export default function Home() {
         <Pricing />
         <WhyUs />
         <Doctors />
+        <ClinicTour />
         <Faq />
         <Booking />
         <Location />

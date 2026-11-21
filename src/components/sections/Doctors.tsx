@@ -24,8 +24,8 @@ export function Doctors() {
                   alt={doctor.image.alt}
                   width={doctor.image.width}
                   height={doctor.image.height}
-                  sizes="96px"
-                  className="size-24 rounded-full object-cover"
+                  sizes="(min-width: 768px) 520px, 100vw"
+                  className="aspect-[4/3] w-full rounded-2xl object-cover"
                 />
               ) : (
                 <div
