@@ -6,7 +6,9 @@ import { Faq } from "@/components/sections/Faq";
 import { Pricing } from "@/components/sections/Pricing";
 import { Doctors } from "@/components/sections/Doctors";
 import { WhyUs } from "@/components/sections/WhyUs";
-import { ConceptBar, Footer, WhatsAppFab } from "@/components/sections/Footer";
+import { ConceptBar, Footer } from "@/components/sections/Footer";
+import { WhatsAppFab } from "@/components/sections/WhatsAppFab";
+import { Location } from "@/components/sections/Location";
 import { Booking } from "@/components/sections/Booking";
 
 const jsonLd = {
@@ -58,8 +60,8 @@ export default function Home() {
         <WhyUs />
         <Doctors />
         <Faq />
-        {/* Upcoming sections (see docs/tasks): ClinicTour, Location */}
         <Booking />
+        <Location />
       </main>
       <Footer />
       <WhatsAppFab />

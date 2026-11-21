@@ -59,17 +59,3 @@ export function Footer() {
     </footer>
   );
 }
-
-export function WhatsAppFab() {
-  return (
-    <a
-      href={site.contact.whatsappHref}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
-      className="fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-[#25D366] text-white shadow-lg md:hidden"
-    >
-      <Icon name="whatsapp" className="size-7" />
-    </a>
-  );
-}
