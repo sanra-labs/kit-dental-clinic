@@ -230,8 +230,8 @@ export const doctors: Doctor[] = [
     bio: "Meera helps patients explore braces and clear aligners with simple explanations and a treatment plan built around their daily routine.",
     tags: ["Clear aligners", "Braces", "Smile planning"],
     image: {
-      src: "/images/doctor-meera.webp",
-      alt: "Dentist in mask and loupes examining a patient",
+      src: "/images/doctor-meera-portrait.webp",
+      alt: "AI-generated sample portrait of a smiling woman dentist in a white coat",
       width: 900,
       height: 900,
     },
@@ -245,8 +245,8 @@ export const doctors: Doctor[] = [
     bio: "Arjun focuses on everyday dental care and restoring missing teeth, taking time to explain each step and help patients feel at ease.",
     tags: ["Dental implants", "Preventive care", "Gentle dentistry"],
     image: {
-      src: "/images/doctor-arjun.webp",
-      alt: "Dentist's gloved hands holding a clear aligner",
+      src: "/images/doctor-arjun-portrait.webp",
+      alt: "AI-generated sample portrait of a smiling man dentist in a white coat",
       width: 900,
       height: 900,
     },

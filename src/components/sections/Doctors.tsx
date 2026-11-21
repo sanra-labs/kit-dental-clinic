@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { doctors, doctorsCopy } from "@/content/site";
 import { SectionHeading } from "@/components/ui/Button";
+import { AiBadge } from "@/components/ui/AiBadge";
 
 export function Doctors() {
   return (
@@ -19,14 +20,17 @@ export function Doctors() {
               className="rounded-[var(--radius-card)] border border-line p-6 sm:p-8"
             >
               {doctor.image ? (
-                <Image
-                  src={doctor.image.src}
-                  alt={doctor.image.alt}
-                  width={doctor.image.width}
-                  height={doctor.image.height}
-                  sizes="(min-width: 768px) 520px, 100vw"
-                  className="aspect-[4/3] w-full rounded-2xl object-cover"
-                />
+                <div className="relative">
+                  <Image
+                    src={doctor.image.src}
+                    alt={doctor.image.alt}
+                    width={doctor.image.width}
+                    height={doctor.image.height}
+                    sizes="(min-width: 768px) 520px, 100vw"
+                    className="aspect-[4/3] w-full rounded-2xl object-cover object-[50%_25%]"
+                  />
+                  <AiBadge />
+                </div>
               ) : (
                 <div
                   aria-hidden="true"
